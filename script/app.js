@@ -14,7 +14,6 @@ for (let i = 0; i < completedBtns.length; i++) {
 
     // disable the button
     completedBtns[i].setAttribute("disabled", "true");
-    completedBtns[i].classList.remove("text-white");
     completedBtns[i].classList.add("disabled:bg-gray-400", "text-dark-800");
 
     //current task title

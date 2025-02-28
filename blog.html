@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <!--Tailwind CDN  & DaisyUi CDN-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f7ff;
+      }
+    </style>
+  </head>
+  <body class="p-5" id="root">
+    <!-- nav section -->
+    <header class="max-w-7xl mx-auto">
+      <div
+        class="bg-white p-2 px-10 shadow-md rounded-lg flex justify-between items-center"
+      >
+        <h1 class="text-3xl flex items-center gap-2">
+          <img src="./assets/logo.png" class="w-10" alt="" />
+          Dev<span class="font-bold">Board</span>
+        </h1>
+        <div class="flex items-center gap-8">
+          <button
+            onclick="window.location.href='./index.html'"
+            class="bg-[#3752FD] cursor-pointer text-white font-bold py-2 px-4 rounded-[5px] completedBtn"
+          >
+            Back To Desk
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="max-w-7xl mx-auto grid grid-cols-12 gap-4"></main>
+  </body>
+</html>
