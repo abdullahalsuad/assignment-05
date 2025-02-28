@@ -1,14 +1,26 @@
 console.log("app  js working.....");
 
-//
-let taskNumber = document.getElementById("taskNumber").innerText;
-let completeTask = document.getElementById("completeTask").innerText;
+// get the  ID
+let taskNumbers = document.getElementById("taskNumber");
+let completeTaskNumbers = document.getElementById("completeTask");
 let completedBtns = document.querySelectorAll(".completedBtn");
 
-completedBtns.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    console.log("btn clicked.....");
-  });
-});
+for (let i = 0; i < completedBtns.length; i++) {
+  completedBtns[i].addEventListener("click", function () {
+    alert("Board Updated Successfully!!");
 
-console.log(taskNumber, completeTask);
+    let taskNumber = parseInt(taskNumbers.innerText);
+    let completeTask = parseInt(completeTaskNumbers.innerText);
+
+    // update the values
+    taskNumber--;
+    completeTask++;
+
+    // update the DOM
+    taskNumbers.innerText = taskNumber;
+    completeTaskNumbers.innerText = completeTask;
+
+    console.log(`taskNumber: ${taskNumber}, completeTask: ${completeTask}`);
+    console.log(`btn clicked..... ${i}`);
+  });
+}

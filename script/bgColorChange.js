@@ -1,9 +1,11 @@
 // Background Color Change
 console.log("Background ColorChange  js working..");
 
+// get the id
 const root = document.getElementById("root");
 const btn = document.getElementById("change-btn");
 
+// change bg color button's  event
 btn.addEventListener("click", function () {
   const bgColor = randomRgbColor();
   root.style.backgroundColor = bgColor;

@@ -1,28 +1,24 @@
-// Date
-
 console.log("date  js working.....");
 
+// get the  ID
 let currentDate = document.getElementById("currentDate");
 let currentWeekday = document.getElementById("currentWeekday");
 
+// setup the date and formate
 const date = new Date();
-
-const options2 = {
+const options = {
   weekday: "long",
 };
-
-const options = {
+const options2 = {
   year: "numeric",
   month: "short",
   day: "numeric",
 };
 
-const formattedWeekday = date.toLocaleDateString("en-US", options2);
-const formattedDate = date
-  .toLocaleDateString("en-US", options)
-  .replace(",", "");
+// update the values
+const formattedWeekday = date.toLocaleDateString("en-US", options);
+const formattedDate = date.toLocaleDateString("en-US", options2);
 
+// update the DOM
 currentWeekday.innerText = formattedWeekday;
 currentDate.innerText = formattedDate;
-
-// console.log(formattedDate);
