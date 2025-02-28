@@ -22,3 +22,17 @@ const formattedDate = date.toLocaleDateString("en-US", options2);
 // update the DOM
 currentWeekday.innerText = formattedWeekday;
 currentDate.innerText = formattedDate;
+
+// Options for formatting the time
+
+function showCurrentTime() {
+  const timeOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  };
+
+  const currentTime = date.toLocaleTimeString("en-US", timeOptions);
+  return currentTime;
+}

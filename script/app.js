@@ -4,6 +4,7 @@ console.log("app  js working.....");
 let taskNumbers = document.getElementById("taskNumber");
 let completeTaskNumbers = document.getElementById("completeTask");
 let historyContainer = document.getElementById("historyContainer");
+let clearHistoryBtn = document.getElementById("clearHistoryBtn");
 let completedBtns = document.querySelectorAll(".completedBtn");
 
 for (let i = 0; i < completedBtns.length; i++) {
@@ -30,7 +31,7 @@ for (let i = 0; i < completedBtns.length; i++) {
     let p = document.createElement("p");
     p.innerHTML = `
       <p class="bg-[#F4F7FF] rounded-md px-5 py-2 text-[16px] mb-5">
-            You have Complete The Task Add Dark Mode at 12:48:15 PM
+            You have Complete The Task Add Dark Mode at ${showCurrentTime()}
         </p>
       `;
 
@@ -39,7 +40,10 @@ for (let i = 0; i < completedBtns.length; i++) {
       alert("All Done");
     }
     historyContainer.appendChild(p);
-    console.log(`taskNumber: ${taskNumber}, completeTask: ${completeTask}`);
-    console.log(`btn clicked..... ${i}`);
   });
 }
+
+// History clear
+clearHistoryBtn.addEventListener("click", function () {
+  historyContainer.innerHTML = "";
+});
