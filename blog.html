@@ -16,11 +16,11 @@
   </head>
   <body class="p-5" id="root">
     <!-- nav section -->
-    <header class="max-w-7xl mx-auto">
+    <header class="mx-auto max-w-7xl">
       <div
-        class="bg-white p-2 px-10 shadow-md rounded-lg flex justify-between items-center"
+        class="flex items-center justify-between p-2 px-10 py-4 bg-white rounded-lg shadow-md"
       >
-        <h1 class="text-3xl flex items-center gap-2">
+        <h1 class="flex items-center gap-2 text-3xl">
           <img src="./assets/logo.png" class="w-10" alt="" />
           Dev<span class="font-bold">Board</span>
         </h1>
@@ -36,6 +36,106 @@
     </header>
 
     <!-- main section -->
-    <main class="max-w-7xl mx-auto grid grid-cols-12 gap-4"></main>
+    <main class="mx-auto max-w-7xl">
+      <div class="py-4 mt-4 bg-white rounded-2xl">
+        <div class="p-4">
+          <h1 class="text-2xl font-semibold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+        </div>
+        <div
+          class="w-full h-[1px] border-b border-dashed border-gray-300"
+        ></div>
+
+        <div class="p-4">
+          <p class="text-xl text-cyan-900">
+            We can select an element in the dom using
+            getElementById,getElementsByClassName,querySelector,getElementsByTagName,querySelectorAll.
+          </p>
+        </div>
+      </div>
+
+      <div class="py-4 mt-4 bg-white rounded-2xl">
+        <div class="p-4">
+          <h1 class="text-2xl font-semibold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent?
+          </h1>
+        </div>
+        <div
+          class="w-full h-[1px] border-b border-dashed border-gray-300"
+        ></div>
+
+        <div class="p-4">
+          <p class="text-xl text-cyan-900">
+            innerHTML:- it reads both the HTML markup and the text content of
+            the element. innerText:- it returns the text as it appears on
+            screen. It ignores HTML tags textContent:- it returns only the text.
+            Whiles innerText reads text as it is rendered on screen
+          </p>
+        </div>
+      </div>
+
+      <div class="py-4 mt-4 bg-white rounded-2xl">
+        <div class="p-4">
+          <h1 class="text-2xl font-semibold">
+            Question-3: What is event delegation in the DOM?
+          </h1>
+        </div>
+        <div
+          class="w-full h-[1px] border-b border-dashed border-gray-300"
+        ></div>
+
+        <div class="p-4">
+          <p class="text-xl text-cyan-900">
+            Event delegation is a JavaScript technique where an event listener
+            is attached to a parent element instead of attaching event listeners
+            to multiple child elements.
+          </p>
+        </div>
+      </div>
+
+      <div class="py-4 mt-4 bg-white rounded-2xl">
+        <div class="p-4">
+          <h1 class="text-2xl font-semibold">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+        </div>
+        <div
+          class="w-full h-[1px] border-b border-dashed border-gray-300"
+        ></div>
+
+        <div class="p-4">
+          <p class="text-xl text-cyan-900">
+            Event bubbling is a type of DOM event propagation where the event
+            first triggers on the innermost target element and then successively
+            triggers on the ancestors (parents) of the target element in the
+            same nesting hierarchy till it reaches the outermost DOM element or
+            document object
+          </p>
+        </div>
+      </div>
+
+      <div class="py-4 mt-4 bg-white rounded-2xl">
+        <div class="p-4">
+          <h1 class="text-2xl font-semibold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+        </div>
+        <div
+          class="w-full h-[1px] border-b border-dashed border-gray-300"
+        ></div>
+
+        <div class="p-4">
+          <p class="text-xl text-cyan-900">
+            We can create, add, and remove elements using JavaScript like
+            document.createElement('div');
+            document.body.appendChild(newElement); newElement.remove();
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
