@@ -18,13 +18,13 @@
     <!-- nav section -->
     <header class="mx-auto max-w-7xl">
       <div
-        class="flex items-center justify-between p-2 px-10 py-4 bg-white rounded-lg shadow-md"
+        class="lg:flex lg:items-center lg:justify-between p-2 px-10 py-4 bg-white rounded-lg shadow-md"
       >
-        <h1 class="flex items-center gap-2 text-3xl">
+        <h1 class="lg:flex items-center gap-2 text-3xl hidden">
           <img src="./assets/logo.png" class="w-10" alt="" />
           Dev<span class="font-bold">Board</span>
         </h1>
-        <div class="flex items-center gap-8">
+        <div class="flex items-center justify-between gap-8">
           <div
             class="flex items-center gap-4 bg-[#F4F7FF] py-2 px-4 rounded-3xl"
           >
@@ -40,14 +40,14 @@
     </header>
 
     <!-- main section -->
-    <main class="grid grid-cols-12 gap-4 mx-auto max-w-7xl">
+    <main class="grid grid-cols-1 gap-4 mx-auto lg:grid-cols-12 max-w-7xl">
       <!-- LEFT -->
-      <section class="col-span-9 bg-[#FFFFFF] mt-4 shadow-md rounded-lg">
+      <section class="lg:col-span-9 bg-[#FFFFFF] mt-4 shadow-md rounded-lg">
         <!-- header -->
-        <div class="grid grid-cols-10 gap-4 p-4 mx-auto">
+        <div class="grid gap-4 p-4 mx-auto md:grid-cols-10 grid-cols-1">
           <!--header box-1 -->
           <div
-            class="col-span-3 bg-[#F4F7FF] rounded-xl p-1 flex gap-2 items-center"
+            class="md:col-span-3 bg-[#F4F7FF] rounded-xl p-1 flex gap-2 items-center"
           >
             <!-- Img -->
             <div class="p-1 w-max">
@@ -66,7 +66,7 @@
           <!--header box-2 -->
           <div
             onclick="window.location.href='./blog.html'"
-            class="flex items-center col-span-4 gap-1 p-1 cursor-pointer rounded-xl"
+            class="flex items-center md:col-span-4 gap-1 p-1 cursor-pointer rounded-xl"
             style="
               background: linear-gradient(
                 130.7deg,
@@ -92,7 +92,7 @@
           </div>
           <!--header box-3 -->
           <div
-            class="col-span-3 bg-[#F4F7FF] rounded-xl p-1 flex gap-2 items-center"
+            class="md:col-span-3 bg-[#F4F7FF] rounded-xl p-1 flex gap-2 items-center"
           >
             <!-- Img -->
             <div class="p-1 w-max">
@@ -116,7 +116,7 @@
         <hr class="mt-4 border-b border-gray-300 border-dashed"" />
 
         <!-- Card container -->
-        <div class="grid grid-cols-3 gap-4 p-4 mx-auto gap-y-5">
+        <div class="grid md:grid-cols-3 gap-4 p-4 mx-auto gap-y-5">
           <!-- card-1  -->
           <div class="bg-[#F4F7FF] p-4 rounded-xl">
             <p
@@ -198,7 +198,8 @@
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+              Optimize page load time, implement lazy loading, and ensure
+              responsive
             </p>
             <hr class="mt-4 border-b border-gray-300 border-dashed"" />
             <!--Card footer -->
@@ -232,7 +233,8 @@
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+              Add new emoji to the project. The emoji should be 🤩 and add it to
+              the main
             </p>
             <hr class="mt-4 border-b border-gray-300 border-dashed"" />
             <!--Card footer -->
@@ -266,7 +268,8 @@
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+              Integrate OpenAI API to generate responses to user queries and
+              provide
             </p>
             <hr class="mt-4 border-b border-gray-300 border-dashed"" />
             <!--Card footer -->
@@ -300,7 +303,8 @@
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+              Improve job searching experience by adding filters, sorting
+              options, and
             </p>
             <hr class="mt-4 border-b border-gray-300 border-dashed"" />
             <!--Card footer -->
@@ -325,7 +329,7 @@
       </section>
 
       <!-- RIGHT -->
-      <section class="col-span-3 bg-[#FFFFFF] shadow-md rounded-lg mt-4">
+      <section class="lg:col-span-3 bg-[#FFFFFF] shadow-md rounded-lg mt-4">
         <div class="p-4">
           <div class="flex items-center justify-center gap-4 mt-4">
             <img src="./assets/activity.png" alt="" />
